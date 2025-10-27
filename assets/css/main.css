@@ -1760,46 +1760,6 @@ input, select, textarea {
     color: #ffd700; /* accent doré au survol */
 }
 
-/* Cercle pulsant amélioré et mobile-friendly */
-.pulse-circle {
-    width: 12px;
-    height: 12px;
-    background-color: #ffffff;          /* blanc pur */
-    border-radius: 50%;                 /* cercle parfait */
-    display: inline-block;
-    margin-right: 8px;
-    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
-    animation: pulse 1.5s infinite;
-    
-    /* Ombre pour contraste et glow blanc */
-    box-shadow: 0 0 2px rgba(0,0,0,0.3), 0 0 6px rgba(255,255,255,1);
-
-    /* Correctifs pour mobile */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-}
-
-/* Effet pulse au hover */
-.menu-pulse li a:hover .pulse-circle {
-    transform: scale(1.5);       
-    background-color: #ffd700;   /* doré */
-    box-shadow: 0 0 8px rgba(255,215,0,0.9), 0 0 6px rgba(255,255,255,1);
-}
-
-/* Animation de pulsation */
-@keyframes pulse {	
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.5); opacity: 1; }
-}
-
-/* Décalage de l’animation pour chaque élément */
-.menu-pulse li:nth-child(1) .pulse-circle { animation-delay: 0s; }
-.menu-pulse li:nth-child(2) .pulse-circle { animation-delay: 0.3s; }
-.menu-pulse li:nth-child(3) .pulse-circle { animation-delay: 0.6s; }
-.menu-pulse li:nth-child(4) .pulse-circle { animation-delay: 0.9s; }
-
 
 
 
